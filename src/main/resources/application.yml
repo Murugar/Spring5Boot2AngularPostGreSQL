@@ -1,0 +1,24 @@
+# Spring Boot configuration
+spring:
+  profiles:
+    active: production
+# Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/userdb
+    username: postgres
+    password: postgres
+# JPA properties
+  jpa:
+    hibernate:
+      # Hibernate ddl auto (create, create-drop, update)
+      ddl-auto: update
+    # Show or not log for each sql query
+    show-sql: true
+    database: postgresql
+    # The SQL dialect makes Hibernate generate better SQL for the chosen database
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+# Logging
+
+
+
